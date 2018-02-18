@@ -8,6 +8,7 @@ env:
 script:
 - dotnet build
 - dotnet test ./test/StravaClub.Core.Test/
+- dotnet publish -c Release
 deploy:
   provider: gae
   keyfile: client-secret.json
