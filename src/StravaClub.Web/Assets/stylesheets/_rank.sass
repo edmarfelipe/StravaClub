@@ -1,0 +1,80 @@
+.rank
+    max-width: 700px
+    margin: 0 auto
+
+    @media( max-width: $mobile-width)
+        max-width: 100%
+    
+    .item
+        padding: 15px
+        box-sizing: border-box
+        width: 100%
+        height: 90px
+        color: $text-dark-color
+        list-style: none
+        display: flex
+        flex-direction: row
+        border-bottom: 1px solid $base-color
+        animation: fadeIn 0.5s linear
+        animation-fill-mode: both
+
+        @for $i from 1 through 30
+            $delay: #{$i * 50 + 'ms'} 
+            .item:nth-child(#{$i})
+                animation-delay: $delay, $delay !important
+
+        .avatar 
+            float: left	
+            margin-right: 20px
+            height: 60px
+            width: 60px
+            position: relative
+            display: inline-block
+
+            img
+                height: 60px
+                width: 60px
+                border-radius: 50%	
+            
+            .rank-label
+                border-radius: 50%
+                height: 20px
+                width: 20px
+                text-align: center
+                background: $primary-color
+                position: absolute
+                right: 0px
+                top: 40px
+                line-height: 22px
+                color: $text-color
+                font-size: 12px
+        
+        .content
+            padding-top: 15px
+            display: inline-block
+            vertical-align: top
+            width: 100%
+               
+            .numbers 
+                float: right
+                font-weight: 400
+
+                span
+                    margin-left: 4px
+                    display: inline-block
+                    min-width: 70px
+                    text-align: center
+                    
+                @media( max-width: 500px)
+                    .elevation,
+                    .time 
+                        display: none
+             
+        .progress-bar
+            height: 5px
+            display: inline-block
+            background: $primary-color
+            border-radius: 5px
+            max-width: 100%
+            margin-top: 12px
+
