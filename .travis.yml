@@ -1,11 +1,10 @@
 language: csharp
-sudo: required
-dist: trusty
+dotnet: 2.0.0
 mono: none
 env:
   global:
   - DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
   - DOTNET_CLI_TELEMETRY_OPTOUT: 1
 script:
-  - dotnet build StravaClub.sln
+  - dotnet build
   - dotnet test test/StravaClub.Core.Test.csproj
