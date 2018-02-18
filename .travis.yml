@@ -10,6 +10,7 @@ script:
 - dotnet test ./test/StravaClub.Core.Test/
 deploy:
   provider: gae
+  keyfile: client-secret.json
   project: strava-club-192713
 before_install:
 - openssl aes-256-cbc -K $encrypted_1722b0de7371_key -iv $encrypted_1722b0de7371_iv
