@@ -21,4 +21,10 @@
     <ProjectReference Include="..\StravaClub.Core\StravaClub.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="app.yaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
