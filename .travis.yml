@@ -7,4 +7,4 @@ env:
   - DOTNET_CLI_TELEMETRY_OPTOUT: 1
 script:
   - dotnet build
-  - dotnet test test/StravaClub.Core.Test.csproj
+  - dotnet test ./test/StravaClub.Core.Test/
