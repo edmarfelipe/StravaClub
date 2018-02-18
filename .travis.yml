@@ -11,6 +11,7 @@ script:
 - dotnet publish -c Release
 deploy:
   provider: gae
+  config: ./src/StravaClub.Web/app.yaml
   keyfile: client-secret.json
   project: strava-club-192713
 before_install:
