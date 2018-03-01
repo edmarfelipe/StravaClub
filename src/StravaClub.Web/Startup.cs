@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using StravaClub.Core;
@@ -24,8 +25,7 @@ namespace StravaClub
 		public void ConfigureServices(IServiceCollection services)
 		{
 			services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
-			services.AddMvc();
-
+		
 			services.AddSingleton<IAppSettings>(Configuration.GetAppSettings());
 
 			services.AddScoped<IActivityRepository, ActivityRepository>();
@@ -33,6 +33,8 @@ namespace StravaClub
 			services.AddScoped<IPhotoRepository, PhotoRepository>();
 			services.AddScoped<IStravaParser, StravaParser>();
 			services.AddScoped<IStravaRepository, StravaRepository>();
+
+			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 		}
 
 		public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -44,8 +46,10 @@ namespace StravaClub
 			else
 			{
 				app.UseExceptionHandler("/error");
+				app.UseHsts();
 			}
 
+			app.UseHttpsRedirection();
 			app.UseStaticFiles();
 			app.UseMvc();
 		}
