@@ -1,16 +1,16 @@
 {
-	"name": "strava-club",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"start": "parcel watch Assets\\javascript\\index.js --out-dir wwwroot --public-url ./",
-		"build": "parcel build Assets\\javascript\\index.js --out-dir wwwroot --public-url ./"
-	},
-	"author": "edmarfelipe",
-	"license": "MIT",
-	"devDependencies": {
-		"node-sass": "^4.7.2",
-		"parcel-bundler": "^1.5.1"
-	}
+    "name": "strava-club",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "parcel watch Assets/javascript/index.js --out-dir wwwroot --public-url ./",
+        "build": "parcel build Assets/javascript/index.js --out-dir wwwroot --public-url ./"
+    },
+    "author": "edmarfelipe",
+    "license": "MIT",
+    "devDependencies": {
+        "node-sass": "^4.9.0",
+        "parcel-bundler": "^1.8.1"
+    }
 }

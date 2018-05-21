@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StravaClub.Core", "src\Stra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StravaClub.Core.Test", "test\StravaClub.Core.Test\StravaClub.Core.Test.csproj", "{60CBC105-4E58-403F-B86B-506D047E1BD1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StravaClub.Web.Test", "test\StravaClub.Web.Test\StravaClub.Web.Test.csproj", "{5E4A08AA-B657-4A05-9EC1-7D02B77ABFEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{60CBC105-4E58-403F-B86B-506D047E1BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60CBC105-4E58-403F-B86B-506D047E1BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60CBC105-4E58-403F-B86B-506D047E1BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E4A08AA-B657-4A05-9EC1-7D02B77ABFEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E4A08AA-B657-4A05-9EC1-7D02B77ABFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E4A08AA-B657-4A05-9EC1-7D02B77ABFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E4A08AA-B657-4A05-9EC1-7D02B77ABFEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -39,6 +45,7 @@ Global
 		{F1EDF137-AE5E-4802-A9D7-E30A3978B1CF} = {9E5825CD-5F29-4E54-B12D-BE629D74EACA}
 		{D936DCF9-5F16-42E7-AE8C-09020A701DB4} = {9E5825CD-5F29-4E54-B12D-BE629D74EACA}
 		{60CBC105-4E58-403F-B86B-506D047E1BD1} = {ECB3C497-6E03-4B03-957F-68E34F5B6B4F}
+		{5E4A08AA-B657-4A05-9EC1-7D02B77ABFEE} = {ECB3C497-6E03-4B03-957F-68E34F5B6B4F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {061C2315-2E6C-4900-9FE4-692E495C7E3A}
