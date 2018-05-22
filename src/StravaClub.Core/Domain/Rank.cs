@@ -44,11 +44,11 @@ namespace StravaClub.Core.Domain
         {
             if (isYear)
             {
-                return traveled / monthlyGoal;
+                return (traveled / yearlyGoal) * 100;
             }
             else
             {
-                return traveled / monthlyGoal;
+                return (traveled / monthlyGoal) * 100;
             }
         }
     }

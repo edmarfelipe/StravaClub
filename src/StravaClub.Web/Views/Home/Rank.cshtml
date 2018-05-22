@@ -28,7 +28,7 @@
 								<span class="distance">@(item.Distance + "km")</span>
 							</div>
 						</div>
-						<div class="progress-bar" style="width: @item.Progress.ToString("0.00%")"></div>
+						<div class="progress-bar" style="width: @(item.Progress + "%" )"></div>
 					</div>
 				</li>
 			}
